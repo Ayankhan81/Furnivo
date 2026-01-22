@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Furnivo | Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">FURNIVO.</div>
+
+      <div class="nav-icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-user" onclick="openLogin()"></i>
+        <i class="fas fa-shopping-bag"></i>
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+      </div>
+
+      <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1><span>INOVA</span>TION</h1>
+      <div class="hero-row">
+        <p>Design Your Space</p>
+        <button>BUY NOW</button>
+      </div>
+      <div class="sofa-img">
+        <img
+          src="../assests/white-background-with-bed_908985-44695.avif"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="collection">
+      <div class="collection-head">
+        <h2>LOVE WHERE YOU LIVE</h2>
+        <button>VIEW ALL COLLECTION</button>
+      </div>
+
+      <div class="collection-cards">
+        <div class="card lightening">LIGHTING</div>
+        <div class="card dark seating">SEATING</div>
+        <div class="card table">TABLES</div>
+        <div class="card dark accessories">ACCESSORIES</div>
+      </div>
+    </section>
+    <section class="bed-section">
+      <h1>
+        OUR <span>BED</span> COLLECTION BLENDS MODERN SCANDINAVIAN DESIGN WITH
+        SCULPTURAL FORMS, ENHANCING ANY SPACE WITH <b>COMFORT</b> AND
+        <b>STYLE</b>.
+      </h1>
+
+      <div class="bed-content">
+        <!-- Bed Image Placeholder -->
+        <div class="bed-image"></div>
+
+        <!-- Bed Info -->
+        <div class="bed-info">
+          <h4>BED MATERIAL</h4>
+          <p>
+            Cotton, silk and bamboo are hypoallergenic and breathable, making
+            them good choices for people with sensitive skin.
+          </p>
+
+          <div class="price">
+            <span class="old">$2000</span>
+            <span class="new">$1500</span>
+          </div>
+
+          <!-- <button class="cart-btn">👜</button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals">
+      <h2>NEW ARRIVALS</h2>
+      <br />
+      <p class="subtitle">
+        Explore our new collection inspired by the seamless blend of personal
+        and professional spaces in modern life. Our versatile and stylish
+        furniture adapts to any setting, providing both elegance and
+        functionality for your home.
+      </p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="../assests/hanging lamp.png" alt="Aura Pendant Lamp" />
+          <span class="category">Lighting</span>
+          <h3>Aura Pendent Lamp</h3>
+          <p class="price">$30.00</p>
+        </div>
+
+        <div class="product-card">
+          <img src="../assests/flower-vase.png" alt="Flower Vase Decor" />
+          <span class="category">Lighting</span>
+          <h3>Flower Vase Decor</h3>
+          <p class="price">$20.00</p>
+        </div>
+
+        <div class="product-card">
+          <img src="../assests/lounge chair.png" alt="Modern Chair" />
+          <span class="category">Lighting</span>
+          <h3>Modern Chair</h3>
+          <p class="price">$100.00</p>
+        </div>
+
+        <!-- <div class="product-card">
+      <img src="../assests/lounge chair.png" alt="Embrace Lounge Chair">
+      <span class="category">Lighting</span>
+      <h3>Embrace Lounge Chair</h3>
+      <p class="price">$200.00</p>
+    </div> -->
+
+        <div class="product-card">
+          <img src="../assests/side table.png" alt="Side Table" />
+          <span class="category">Lighting</span>
+          <h3>Side Table</h3>
+          <p class="price">$150.00</p>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <button>View All</button>
+      </div>
+
+      <!-- ---section 3----- -->
+    </section>
+    <section class="about">
+      <div class="about-left">
+        <div class="img-big">
+          <img src="../assests/big.webp" alt="Furniture" />
+        </div>
+
+        <div class="img-small">
+          <img src="../assests/pexels-steve-923192.jpg" alt="Decor" />
+        </div>
+      </div>
+
+      <div class="about-right">
+        <p class="tag">ABOUT US</p>
+
+        <h2>
+          FURNIX HOMES LEADS<br />
+          IN MODERN DESIGN,<br />
+          BLENDING TIMELESS<br />
+          AESTHETICS,<br />
+          FUNCTIONALITY AND<br />
+          <span>METICULOUS</span><br />
+          CRAFTMANSHIP
+        </h2>
+
+        <button class="about-btn">More About Us</button>
+      </div>
+    </section>
+
+    <!-- -----------section 4--------- -->
+    <section class="vision-section">
+      <div class="vision-bg">
+        <div class="vision-content">
+          <h2>
+            INNOVATION VISION <br />
+            IN MODERN DESIGN
+          </h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit
+            error officia voluptates quasi est perspiciatis.
+          </p>
+
+          <button class="vision-btn">READ OUR STORY</button>
+        </div>
+      </div>
+    </section>
+    <!-- ---------footer part-------------- -->
+    <section>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="feature">
+            <h4>Customer Service</h4>
+            <p>We’re here to help you anytime.</p>
+          </div>
+
+          <div class="feature">
+            <h4>Fast Free Shipping</h4>
+            <p>On orders over $150</p>
+          </div>
+
+          <div class="feature">
+            <h4>Secure Payment</h4>
+            <p>100% secure payment</p>
+          </div>
+        </div>
+
+        <div class="footer-main">
+          <div class="footer-col">
+            <h2
+              style="
+                font-family:
+                  Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+                font-weight: 700;
+              "
+            >
+              FURNIVO.
+            </h2>
+            <p>Sign up to receive 10% off your first order</p>
+
+            <div class="email-box">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit" onclick="submit()">Submit</button>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Collections</h4>
+            <p>Seating</p>
+            <p>Lighting</p>
+            <p>Sofas</p>
+            <p>Accessories</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Designer</h4>
+            <p>Name1</p>
+            <p>Name2</p>
+            <p>Name3</p>
+            <p>Name4</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Information</h4>
+            <p>Our Story</p>
+            <p>Our Journal</p>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 FURNIVO. Homes. All rights reserved.
+        </div>
+      </footer>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
