@@ -171,13 +171,12 @@ body {
 
 .collection-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
 }
 /* -----------Card -collection--------- */
 .card {
-  height: 400px;
-  /* background: #e5e5e5; image ki jagah */
+  height: 370px;
   border-radius: 20px;
   display: flex;
   align-items: flex-end;
@@ -346,23 +345,6 @@ body {
   color: #444;
 }
 
-.cart-btn {
-  position: absolute;
-  bottom: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #9b3c2d;
-  color: #fff;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.cart-btn:hover {
-  background: #7f2f23;
-}
 
 .view-all {
   margin-top: 40px;
@@ -382,8 +364,11 @@ body {
   background: #c88e30;
 }
 
+/* -----------section-3----------- */
+
 .about {
   display: flex;
+  justify-content: center;
   gap: 50px;
   padding: 60px;
   align-items: center;
@@ -391,7 +376,7 @@ body {
 
 .about-left {
   position: relative;
-  margin-left: 270px;
+  /* margin-left: 270px; */
 }
 
 .img-big img {
@@ -409,9 +394,9 @@ body {
   left: -60px;
 }
 
-.about-right {
+/* .about-right {
   max-width: 450px;
-}
+} */
 
 .tag {
   letter-spacing: 2px;
@@ -437,16 +422,8 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .about {
-    /* margin-left: 50px; */
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-left {
-    margin-left: 100px;
-  }
-}
+
+
 /* -------------section 4---------- */
 .vision-section {
   display: flex;
@@ -484,14 +461,13 @@ body {
   font-size: 13px;
 }
 
-/* Right side (image ke liye future me) */
+
 .vision-bg {
   background-image: url(../assests/WhatsApp\ Image\ 2026-01-22\ at\ 00.56.55.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   width: 100%;
-  /* background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08)); */
 }
 
 /* -------------Footer part css----------- */
@@ -502,12 +478,13 @@ body {
 }
 
 .footer-top {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background: #978f7a;
   color: #000;
-  padding: 30px 10%;
+  padding: 20px;
+  gap: 20px;
 }
 
 .feature {
@@ -517,7 +494,7 @@ body {
   height: 150px;
   width: 380px;
   background-color: #bebaba;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 .feature h4 {
   font-size: 24px;
@@ -579,16 +556,26 @@ body {
   background: #fff;
   font-size: 12px;
 }
-/* RESPONSIVE */
+
+
+/* ===================responsive========== */
+
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .navbar {
-    padding: 0 20px;
+    padding: 4px;
+  }
+ 
+}
+@media (width<450px){
+   .nav-icons i {
+    margin: 2px;
   }
 }
+
 @media (max-width: 900px) {
   .collection-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -614,6 +601,30 @@ body {
     width: 100%;
   }
 }
+/* ---------section 3--------- */
+@media (max-width: 768px){
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
+@media (width<620px){
+    .img-big img{
+        width: 330px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    .img-small img{
+        width: 180px;
+        height: 150px;
+        border-radius: 15px;
+        left: -20px;
+        top: 50px;
+    }
+    
+}
+
 /* ---------section 4---------- */
 @media (max-width: 768px) {
   .vision-section {
@@ -638,8 +649,17 @@ body {
 }
 @media (max-width: 768px) {
   .footer-top .feature {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
+    height: 100px;
+    width: 300px;
+    border-radius: 18px;
     margin-top: 20px;
+  }
+  .feature h4{
+    font-size: 18px;
+  }
+  .feature p{
+    font-size: 12px;
   }
 }
